@@ -1,0 +1,140 @@
+/* =============================================================
+   TẬP ĐỌC TIẾNG VIỆT — vần và ghép tiếng
+   ============================================================= */
+
+/* Nhóm vần, chia theo độ khó tăng dần */
+export const VN_RIMES = [
+  {
+    key: 'rime-n',
+    title: 'Vần có N',
+    items: [
+      { id: 'r-an', char: 'an', word: 'bàn',  emoji: '🪑' },
+      { id: 'r-ăn', char: 'ăn', word: 'ăn',   emoji: '🍚' },
+      { id: 'r-ân', char: 'ân', word: 'sân',  emoji: '🏡' },
+      { id: 'r-en', char: 'en', word: 'sen',  emoji: '🪷' },
+      { id: 'r-ên', char: 'ên', word: 'nhện', emoji: '🕷️' },
+      { id: 'r-in', char: 'in', word: 'kín',  emoji: '🔒' },
+      { id: 'r-on', char: 'on', word: 'con',  emoji: '👦' },
+      { id: 'r-ôn', char: 'ôn', word: 'chôn', emoji: '🕳️' },
+      { id: 'r-ơn', char: 'ơn', word: 'sơn',  emoji: '🎨' },
+      { id: 'r-un', char: 'un', word: 'bún',  emoji: '🍜' },
+    ],
+  },
+  {
+    key: 'rime-m',
+    title: 'Vần có M',
+    items: [
+      { id: 'r-am', char: 'am', word: 'cam',  emoji: '🍊' },
+      { id: 'r-ăm', char: 'ăm', word: 'tăm',  emoji: '🦷' },
+      { id: 'r-âm', char: 'âm', word: 'mâm',  emoji: '🍽️' },
+      { id: 'r-em', char: 'em', word: 'kem',  emoji: '🍦' },
+      { id: 'r-êm', char: 'êm', word: 'đêm',  emoji: '🌙' },
+      { id: 'r-im', char: 'im', word: 'chim', emoji: '🐦' },
+      { id: 'r-om', char: 'om', word: 'tom',  emoji: '🍲' },
+      { id: 'r-ôm', char: 'ôm', word: 'tôm',  emoji: '🦐' },
+      { id: 'r-ơm', char: 'ơm', word: 'cơm',  emoji: '🍚' },
+      { id: 'r-um', char: 'um', word: 'chum', emoji: '🏺' },
+    ],
+  },
+  {
+    key: 'rime-ng',
+    title: 'Vần có NG',
+    items: [
+      { id: 'r-ang', char: 'ang', word: 'bàng', emoji: '🌳' },
+      { id: 'r-ăng', char: 'ăng', word: 'trăng',emoji: '🌕' },
+      { id: 'r-âng', char: 'âng', word: 'nâng', emoji: '🙌' },
+      { id: 'r-ong', char: 'ong', word: 'ong',  emoji: '🐝' },
+      { id: 'r-ông', char: 'ông', word: 'ông',  emoji: '👴' },
+      { id: 'r-ung', char: 'ung', word: 'thùng',emoji: '🪣' },
+      { id: 'r-ưng', char: 'ưng', word: 'sừng', emoji: '🐂' },
+      { id: 'r-iêng',char: 'iêng',word: 'kiêng',emoji: '🚫' },
+    ],
+  },
+  {
+    key: 'rime-vowel',
+    title: 'Vần hai nguyên âm',
+    items: [
+      { id: 'r-ai', char: 'ai', word: 'tai',  emoji: '👂' },
+      { id: 'r-ao', char: 'ao', word: 'áo',   emoji: '👕' },
+      { id: 'r-au', char: 'au', word: 'rau',  emoji: '🥬' },
+      { id: 'r-ay', char: 'ay', word: 'tay',  emoji: '✋' },
+      { id: 'r-ây', char: 'ây', word: 'mây',  emoji: '☁️' },
+      { id: 'r-eo', char: 'eo', word: 'kéo',  emoji: '✂️' },
+      { id: 'r-êu', char: 'êu', word: 'kêu',  emoji: '📣' },
+      { id: 'r-oi', char: 'oi', word: 'voi',  emoji: '🐘' },
+      { id: 'r-ôi', char: 'ôi', word: 'xôi',  emoji: '🍙' },
+      { id: 'r-ơi', char: 'ơi', word: 'trời', emoji: '🌤️' },
+      { id: 'r-ui', char: 'ui', word: 'vui',  emoji: '😄' },
+      { id: 'r-ua', char: 'ua', word: 'cua',  emoji: '🦀' },
+    ],
+  },
+  {
+    key: 'rime-stop',
+    title: 'Vần có T, C, P',
+    items: [
+      { id: 'r-at', char: 'at', word: 'cát',  emoji: '🏖️' },
+      { id: 'r-ăt', char: 'ăt', word: 'mắt',  emoji: '👁️' },
+      { id: 'r-ât', char: 'ât', word: 'đất',  emoji: '🌍' },
+      { id: 'r-et', char: 'et', word: 'tét',  emoji: '🎋' },
+      { id: 'r-it', char: 'it', word: 'mít',  emoji: '🥭' },
+      { id: 'r-ot', char: 'ot', word: 'ngót', emoji: '🥗' },
+      { id: 'r-ôt', char: 'ôt', word: 'một',  emoji: '1️⃣' },
+      { id: 'r-ut', char: 'ut', word: 'bút',  emoji: '🖊️' },
+      { id: 'r-ac', char: 'ac', word: 'các',  emoji: '👥' },
+      { id: 'r-oc', char: 'oc', word: 'sóc',  emoji: '🐿️' },
+      { id: 'r-ôc', char: 'ôc', word: 'ốc',   emoji: '🐌' },
+      { id: 'r-up', char: 'up', word: 'búp',  emoji: '🌷' },
+    ],
+  },
+];
+
+/* Ghép tiếng: phụ âm + vần = tiếng có nghĩa (kèm hình) */
+export const VN_BLENDS = [
+  {
+    key: 'blend-1',
+    title: 'Ghép tiếng đơn giản',
+    items: [
+      { id: 'b-ba',  onset: 'b',  rime: 'a',  char: 'ba',  word: 'ba',  emoji: '👨' },
+      { id: 'b-me',  onset: 'm',  rime: 'e',  char: 'mẹ',  word: 'mẹ',  emoji: '👩' },
+      { id: 'b-be',  onset: 'b',  rime: 'e',  char: 'bé',  word: 'bé',  emoji: '👶' },
+      { id: 'b-ca',  onset: 'c',  rime: 'a',  char: 'cá',  word: 'cá',  emoji: '🐟' },
+      { id: 'b-ga',  onset: 'g',  rime: 'a',  char: 'gà',  word: 'gà',  emoji: '🐔' },
+      { id: 'b-de',  onset: 'd',  rime: 'ê',  char: 'dê',  word: 'dê',  emoji: '🐐' },
+      { id: 'b-bo',  onset: 'b',  rime: 'o',  char: 'bò',  word: 'bò',  emoji: '🐮' },
+      { id: 'b-la',  onset: 'l',  rime: 'a',  char: 'lá',  word: 'lá',  emoji: '🍃' },
+      { id: 'b-xe',  onset: 'x',  rime: 'e',  char: 'xe',  word: 'xe',  emoji: '🚗' },
+      { id: 'b-vo',  onset: 'v',  rime: 'o',  char: 'vò',  word: 'vò',  emoji: '🏺' },
+    ],
+  },
+  {
+    key: 'blend-2',
+    title: 'Ghép tiếng có vần',
+    items: [
+      { id: 'b-con', onset: 'c',  rime: 'on',  char: 'con',  word: 'con mèo', emoji: '🐱' },
+      { id: 'b-ban', onset: 'b',  rime: 'an',  char: 'bàn',  word: 'cái bàn', emoji: '🪑' },
+      { id: 'b-com', onset: 'c',  rime: 'ơm',  char: 'cơm',  word: 'bát cơm', emoji: '🍚' },
+      { id: 'b-nha', onset: 'nh', rime: 'a',   char: 'nhà',  word: 'ngôi nhà',emoji: '🏠' },
+      { id: 'b-cho', onset: 'ch', rime: 'o',   char: 'chó',  word: 'con chó', emoji: '🐕' },
+      { id: 'b-tho', onset: 'th', rime: 'o',   char: 'thỏ',  word: 'con thỏ', emoji: '🐇' },
+      { id: 'b-khi', onset: 'kh', rime: 'i',   char: 'khỉ',  word: 'con khỉ', emoji: '🐒' },
+      { id: 'b-trau',onset: 'tr', rime: 'âu', char: 'trâu',  word: 'con trâu',emoji: '🐃' },
+      { id: 'b-ong', onset: '',   rime: 'ong', char: 'ong',  word: 'con ong', emoji: '🐝' },
+      { id: 'b-hoa', onset: 'h',  rime: 'oa',  char: 'hoa',  word: 'bông hoa',emoji: '🌸' },
+    ],
+  },
+  {
+    key: 'blend-3',
+    title: 'Đọc câu ngắn',
+    sentences: true,
+    items: [
+      { id: 's-1', char: 'Bé ăn cơm.',        emoji: '🍚' },
+      { id: 's-2', char: 'Con mèo ngủ.',      emoji: '😴' },
+      { id: 's-3', char: 'Mẹ đi chợ.',        emoji: '🧺' },
+      { id: 's-4', char: 'Gà mẹ có ba con.',  emoji: '🐔' },
+      { id: 's-5', char: 'Bà cho bé quả cam.',emoji: '🍊' },
+      { id: 's-6', char: 'Cá bơi trong ao.',  emoji: '🐟' },
+      { id: 's-7', char: 'Trời có mây trắng.',emoji: '☁️' },
+      { id: 's-8', char: 'Bé rửa tay sạch.',  emoji: '🧼' },
+    ],
+  },
+];
